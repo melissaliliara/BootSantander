@@ -1,0 +1,17 @@
+#Escreva um programa que solicite ao usuário uma palavra e verifique se ela é um palíndromo (igual ao ler de trás para frente) 
+
+def verificar_palindromo(entrada):
+    entrada_invertida = entrada[::-1]
+
+    if entrada == entrada_invertida:
+        return True
+    else:
+        return False
+
+
+entrada = input("Digite uma palavra: ")
+
+if verificar_palindromo(entrada):
+    print(f"A palavra é um palíndromo.")
+else:
+    print(f"A palavra {entrada} não é um palíndromo.")
